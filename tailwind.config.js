@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors:{
         primary: "#6486FF",
-        gradient: "bg-gradient-to-r from-green-400 to-blue-500"
+        hover: "#476FFF"
       },
       fontFamily:{
         body: "'Open Sans', sans-serif"
