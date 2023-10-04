@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body class="font-body">
-    <div class="container mx-auto pt-20">
+    <div class="container mx-auto pt-20 max-w-screen-xl">
 
         <!-- nav -->
             <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600  shadow-sm">
@@ -19,11 +19,11 @@
                     <img src="/imgs/logo.svg" class="h-9" alt="LongDesign">
                 </a>
                 <div class="flex md:order-2 gap-4 items-center">
-                    <a href="/contact.html" class="px-4 py-3 bg-primary hover:bg-indigo-500 focus:ring-4 focus:outline-none    focus:ring-blue-300    justify-start rounded-lg items-center gap-2.5 font-bold text-white text-center">Hire    me</a>
+                    <a href="/contact.html" class="px-4 py-3 bg-primary hover:bg-hover focus:ring-4 focus:outline-none    focus:ring-blue-300    justify-start rounded-lg items-center gap-2.5 font-semibold text-white text-center">Hire me</a>
     
-                    <a href="" class="rounded-lg hover:bg-gray-100">
+                    <!-- <a href="" class="rounded-lg hover:bg-gray-100">
                         <img src="/imgs/darkmode.svg" alt="darkmode">                        
-                    </a>
+                    </a> -->
     
                     <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-12 h-12    justify-center text-sm text-gray-600 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2    focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"    aria-controls="navbar-sticky" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -36,10 +36,10 @@
                 <div class="top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 absolute hidden w-full md:flex md:w-auto     md:order-1" id="navbar-sticky">
                     <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row   md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                          <a href="/index.html" class="block rounded-lg hover:bg-indigo-50 text-center text-gray-400 hover:text-primary   font-bold px-4 py-3   justify-center items-center" aria-current="page">Work</a>
+                          <a href="/index.html" class="block rounded-lg hover:bg-indigo-50 text-center text-gray-400 hover:text-primary   font-semibold px-4 py-3   justify-center items-center" aria-current="page">Work</a>
                         </li>
                         <li>
-                            <a href="/pages/about.html" class="block rounded-lg hover:bg-indigo-50 text-center text-gray-800 hover:text-primary     font-bold px-4 py-3     justify-center items-center" aria-current="page">About Me</a>
+                            <a href="/pages/about.html" class="block rounded-lg hover:bg-indigo-50 text-center text-gray-800 hover:text-primary     font-semibold px-4 py-3     justify-center items-center" aria-current="page">About Me</a>
                         </li>   
                     </ul>
                 </div>
@@ -47,16 +47,120 @@
             </nav>     
             <!-- Experiences -->
     
-            <h3 class="font-semibold text-center text-3xl p-4 text-gray-800">
+            <h3 class="font-semibold text-center text-3xl p-8 text-gray-800">
             Experiences
             </h3>
-        
-        <div>
-            <div class="text-center text-2xl text-gray-800 font-semibold">
-                FPT Software
+
+        <div class="flex flex-col gap-2 p-4 justify-center items-center sm:flex-row sm:justify-between">
+            <div class="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
+                <div class="w-16 h-16 flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm rounded-lg">
+                    <img src="/imgs/fpt.webp" class="w-16" alt="fpt">
+                </div>
+                <div class="text-center text-xl text-gray-700 font-semibold">
+                    FSoft - FPT Design
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="text-center sm:text-right text-xl text-gray-600">
+                    UI UX Desinger
+                </div>
+                <div class="text-center sm:text-right text-lg text-gray-400">
+                    Jan 2021 - Now
+                </div>
             </div>
         </div>
 
+        <hr>
+
+        <div class="flex flex-col gap-2 p-4 justify-center items-center sm:flex-row sm:justify-between">
+            <div class="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
+                <div class="w-16 h-16 flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm rounded-lg">
+                    <img src="/imgs/g2j.png" class="w-16" alt="Go2Joy">
+                </div>
+                <div class="text-center text-xl text-gray-700 font-semibold">
+                    Go2Joy 
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="text-center sm:text-right text-xl text-gray-600">
+                    Product Desinger
+                </div>
+                <div class="text-center sm:text-right text-lg text-gray-400">
+                    Mar 2020 - Dec 2020
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="flex flex-col gap-2 p-4 justify-center items-center sm:flex-row sm:justify-between">
+            <div class="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
+                <div class="w-16 h-16 flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm rounded-lg">
+                    <img src="/imgs/ada.webp" class="w-16" alt="ada">
+                </div>
+                <div class="text-center text-xl text-gray-700 font-semibold">
+                    ADA Marketing
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="text-center sm:text-right text-xl text-gray-600">
+                    Graphic Designer
+                </div>  
+                <div class="text-center sm:text-right text-lg text-gray-400">
+                    Nov 2019 - Feb 2020
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="flex flex-col gap-2 p-4 justify-center items-center sm:flex-row sm:justify-between">
+            <div class="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
+                <div class="w-16 h-16 flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm rounded-lg">
+                    <img src="/imgs/capi.webp" class="w-16" alt="capi">
+                </div>
+                <div class="text-center text-xl text-gray-700 font-semibold">
+                    Capi Academy
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="text-center sm:text-right text-xl text-gray-600">
+                    Mobile App Design Instructor
+                </div>
+                <div class="text-center sm:text-right text-lg text-gray-400">
+                    2020
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="flex flex-col gap-2 p-4 justify-center items-center sm:flex-row sm:justify-between">
+            <div class="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
+                <div class="w-16 h-16 flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm rounded-lg">
+                    <img src="/imgs/telos.webp" class="w-16" alt="fpt">
+                </div>
+                <div class="text-center text-xl text-gray-700 font-semibold">
+                    Telos Academy
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="text-center sm:text-right text-xl text-gray-600">
+                    Figma Instructor
+                </div>
+                <div class="text-center sm:text-right text-lg text-gray-400">
+                    2020
+                </div>
+            </div>
+        </div>    
+                
+    </div>
+
+    <div class="flex justify-center p-8">
+        <a href="" class="flex px-4 py-3 bg-primary hover:bg-hover focus:ring-4 focus:outline-none    focus:ring-blue-300    justify-start rounded-lg items-center gap-2.5 font-semibold text-white text-center">
+            <img src="/imgs/download.svg" alt="download">
+            Download my resume
+        </a>
     </div>
 
     <!-- footer -->
