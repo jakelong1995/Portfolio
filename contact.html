@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 shadow-sm">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="./index.html" class="flex items-center">
+            <img src="./imgs/logo.svg" class="h-9" alt="LongDesign">
+        </a>
+        <div class="flex md:order-2 gap-4 items-center">
+            <a href="/contact.html" class="px-4 py-3 bg-primary hover:bg-hover focus:ring-4 focus:outline-none    focus:ring-blue-300 justify-start rounded-lg items-center gap-2.5 font-semibold text-white text-center">Hire me</a>
+
+            <!-- <a href="" class="rounded-lg hover:bg-gray-100">
+                <img src="/imgs/darkmode.svg" alt="darkmode">                        
+            </a> -->
+
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-12 h-12    justify-center text-sm text-gray-600 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2    focus:ring-gray-200"    aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1   1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="top-[138px] md:top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed md:absolute hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 bg-gray-50 md:flex-row  md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                <li>
+                  <a href="./index.html" class="block rounded-lg hover:bg-indigo-50 text-center text-gray-400 hover:text-primary   font-semibold px-4 py-3   justify-center items-center" aria-current="page">Work</a>
+                </li>
+                <li>
+                    <a href="./about.html" class="block rounded-lg hover:bg-indigo-50 text-center text-gray-400 hover:text-primary     font-semibold px-4 py-3     justify-center items-center">About Me</a>
+                </li>   
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <iframe
+      id="JotFormIFrame-232881814275462"
+      title="Fancy Envelope Contact Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/232881814275462"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+    var ifr = document.getElementById("JotFormIFrame-232881814275462");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+            iframe.style.minHeight = args[1] + "px";
+          }
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>
+
+    <!-- footer -->
+    <footer class=" w-full h-60 bg-black flex flex-col items-center gap-6 justify-center text-white text-sm font-thin">
+        <div class="flex gap-8">
+            <a href="https://github.com/jakelong1995">
+                <img src="./imgs/Github.svg" class="h-6" alt="social">
+            </a>
+            <a href="https://www.linkedin.com/in/jakelong1995/">
+                <img src="./imgs/LinkedIn.svg" class="h-6" alt="social">
+            </a>
+            <a href="https://twitter.com/TranLon76355724">
+                <img src="./imgs/X.svg" class="h-6" alt="social"> 
+            </a>
+            <a href="https://www.behance.net/trnminhhonglong">
+                <img src="./imgs/Behance.svg" class="h-6" alt="social">
+            </a>
+        </div>
+        <div>
+            © 2023 Long Design
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+<script src="main.js"></script>
