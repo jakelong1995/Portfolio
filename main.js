@@ -5,7 +5,7 @@ const toggleBtn = document.querySelector('[data-collapse-toggle="navbar-sticky"]
 const menu = document.getElementById('navbar-sticky');
 
 // Add a click event listener to the button
-toggleBtn.addEventListener('click', function() {
+toggleBtn.addEventListener('click', function () {
   // Toggle the aria-expanded attribute of the button
   const expanded = toggleBtn.getAttribute('aria-expanded') === 'true' || false;
   toggleBtn.setAttribute('aria-expanded', !expanded);

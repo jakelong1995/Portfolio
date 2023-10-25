@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer components {
-    .card {
-      @apply rounded-lg overflow-hidden relative shadow-md aspect-[4/3];
-    }
-    .cardhover {
-      @apply transition-all text-white text-2xl font-semibold bg-primary absolute opacity-0 hover:opacity-95 inset-0 flex items-center justify-center text-center;
-    }
+  .card {
+    @apply rounded-lg overflow-hidden relative shadow-md aspect-[4/3];
   }
+  .cardhover {
+    @apply transition-all text-white text-2xl font-semibold bg-primary absolute opacity-0 hover:opacity-95 inset-0 flex items-center justify-center text-center;
+  }
+}
